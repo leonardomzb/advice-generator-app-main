@@ -1,0 +1,70 @@
+:root {
+  --clr-pr-300: hsl(193, 38%, 86%);
+  --clr-pr-400: hsl(150, 100%, 66%);
+
+  --clr-ntr-700: hsl(217, 19%, 38%);
+  --clr-ntr-800: hsl(217, 19%, 24%);
+  --clr-ntr-900: hsl(218, 23%, 16%);
+
+  --ff-base : "Manrope", sans-serif;
+  --fs-regular: 1.75rem;
+  --fs-small: 0.875rem;
+  --fw-semibold: 800;
+}
+
+body {
+  background-color: var(--clr-ntr-900);
+  font-family: var(--ff-base);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-pr-300);
+  display: grid;
+  place-content: center;
+}
+
+main{
+  padding: 1rem;
+}
+.advice-section{
+  max-width: 33.75rem;
+  background-color: var(--clr-ntr-800);
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.advice-id {
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  color: var(--clr-pr-400);
+  letter-spacing: 4px;
+  padding-block: .5rem 2rem;
+}
+
+.dice-button {
+  border: none;
+  background-color: var(--clr-pr-400);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;  
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.dice-button:hover,
+.dice-button:focus-visible{
+  box-shadow: 0 0 2rem var(--clr-pr-400);
+  outline: none;
+}
+
+
+.line {
+  padding-block: 3rem 2rem;
+  width: 100%;
+}
